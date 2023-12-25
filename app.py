@@ -2,8 +2,9 @@ import streamlit as st
 from newsapi import NewsApiClient
 from textblob import TextBlob
 
-# Set up News API key
-newsapi = NewsApiClient(api_key='c17c7f4e-81c3-4246-94fc-83a2dfe5d817')
+# Set up News API key (replace with the actual key from https://www.newsapi.ai/)
+newsapi_key = 'c17c7f4e-81c3-4246-94fc-83a2dfe5d817'
+newsapi = NewsApiClient(api_key=newsapi_key)
 
 # Streamlit app
 def main():
